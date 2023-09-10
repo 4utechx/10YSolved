@@ -10,24 +10,30 @@ export class AddQuestionComponent  implements OnInit {
   QuestionEnglish:string= "";
   QuestionHindi:string= "";
   Option:object={};
+  gridRadios:string="";
   CorrectAnswer:string= "";
   Solutions:string= "";
   CreatedDate: string= "";
   Year: string="";
   ExamType:string="";
   ExamSubType:string="";
+
   constructor() { }
 
   ngOnInit() {
   }
-    // myFunc()
-  //  console.log(this.QuestionEnglish);
-  //   console.log(this.company);
-  //   console.log(this.email);
-  //   console.log(this.lastname);
-  //   console.log(this.title);
-  //   console.log(this.phoneNum);
-  //   console.log(this.needHelp);
+    myFunc(){
+    console.log(this.QuestionEnglish);
+    console.log(this. QuestionHindi);
+    // console.log(this.Option);
+    console.log(this.gridRadios);
+    console.log(this. CorrectAnswer);
+    console.log(this. Solutions);
+    console.log(this. CreatedDate);
    
-  // }
+    console.log(this.Year);
+    console.log(this.ExamType);
+    console.log(this. ExamSubType);
+   
+   }
 }

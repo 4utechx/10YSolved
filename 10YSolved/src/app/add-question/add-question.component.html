@@ -2,16 +2,16 @@
 <h3 class="headStyle">Get <u>Your</u> Answer</h3>
 <form class="formStyle">
     <div class="form-group row">
-      <label for="inputEmail3" class="col-sm-2 col-form-label formStyle1">Question in English</label>
+      <label for="inputEmail3" class="col-sm-2 col-form-label formStyle1" >Question in English</label>
       <div class="col-sm-6">
-        <input type="question" class="form-control bgColor" id="inputEmail3" placeholder="Question in English">
+        <input type="question" class="form-control bgColor" name="QuestionEnglish" [(ngModel)]="QuestionEnglish" id="inputEmail3" placeholder="Question in English">
       </div>
     </div>
 
     <div class="form-group row">
       <label for="inputPassword3" class="col-sm-2 col-form-label formStyle1">Question in Hindi</label>
       <div class="col-sm-6">
-        <input type="question" class="form-control bgColor" id="inputPassword3" placeholder="Question in Hindi">
+        <input type="question" class="form-control bgColor"  name="QuestionHindi" [(ngModel)]="QuestionHindi" id="inputPassword3" placeholder="Question in Hindi">
       </div>
     </div>
 
@@ -20,28 +20,28 @@
         <legend class="col-form-label col-sm-2 pt-0 formStyle1">Options</legend>
         <div class="col-sm-6 formStyle1">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <input class="form-check-input" [(ngModel)]="gridRadios" type="radio" name="gridRadios" id="gridRadios1" value="optionA" checked>
             <label class="form-check-label" for="gridRadios1">
               A
             </label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-            <label class="form-check-label" for="gridRadios2">
+            <input class="form-check-input" [(ngModel)]="gridRadios" type="radio" name="gridRadios" id="gridRadios2" value="optionB">
+            <label class="form-check-label"  for="gridRadios2">
               B
             </label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+            <input class="form-check-input"  [(ngModel)]="gridRadios"  type="radio" name="gridRadios" id="gridRadios3" value="optionC">
             <label class="form-check-label" for="gridRadios3">
               C
             </label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+            <input class="form-check-input"  [(ngModel)]="gridRadios"  type="radio" name="gridRadios" id="gridRadios4" value="optionD">
             <label class="form-check-label" for="gridRadios3">
               D
             </label>
@@ -51,47 +51,47 @@
     </fieldset>
 
     <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-2 col-form-label formStyle1">Correct Ansswer</label>
+        <label for="inputPassword3" class="col-sm-2 col-form-label formStyle1" >Correct Ansswer</label>
         <div class="col-sm-6">
-          <input type="password" class="form-control bgColor" id="inputPassword3" placeholder="Correct Ansswer">
+          <input type="text" class="form-control bgColor" name="CorrectAnswer" [(ngModel)]="CorrectAnswer" id="inputPassword3" placeholder="Correct Ansswer">
         </div>
       </div>
 
       <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-2 col-form-label formStyle1">Solution</label>
+        <label for="inputPassword3" class="col-sm-2 col-form-label formStyle1" >Solution</label>
         <div class="col-sm-6">
-          <input type="password" class="form-control bgColor" id="inputPassword3" placeholder="Solution">
+          <input type="text" class="form-control bgColor" name="Solutions" [(ngModel)]="Solutions" id="inputPassword3" placeholder="Solution">
         </div>
       </div>
 
       <div class="form-group row">
         <label for="inputPassword3" class="col-sm-2 col-form-label formStyle1">Created Date</label>
         <div class="col-sm-6">
-          <input type="password" class="form-control bgColor" id="inputPassword3" placeholder="Created Date">
+          <input type="text" class="form-control bgColor" name="CreatedDate" [(ngModel)]="CreatedDate"  id="inputPassword3" placeholder="Created Date">
         </div>
       </div>
 
       <div class="form-group row">
         <label for="inputPassword3" class="col-sm-2 col-form-label formStyle1">Year</label>
         <div class="col-sm-6">
-          <input type="password" class="form-control bgColor" id="inputPassword3" placeholder="Year">
+          <input type="text" class="form-control bgColor" name="Year" [(ngModel)]="Year"  id="inputPassword3" placeholder="Year">
         </div>
       </div>
 
       <div class="form-group row">
         <label for="inputPassword3" class="col-sm-2 col-form-label formStyle1">Exam Type</label>
         <div class="col-sm-6">
-          <input type="password" class="form-control bgColor" id="inputPassword3" placeholder="Exam Type">
+          <input type="text" class="form-control bgColor" name="Exam Type" [(ngModel)]="ExamType" id="inputPassword3" placeholder="Exam Type">
         </div>
       </div>
 
       <div class="form-group row">
         <label for="inputPassword3" class="col-sm-2 col-form-label formStyle1">Sub-Exam Type</label>
         <div class="col-sm-6">
-          <input type="password" class="form-control bgColor" id="inputPassword3" placeholder="Sub Exam Type">
+          <input type="text" class="form-control bgColor" name="ExamSubType" [(ngModel)]="ExamSubType" id="inputPassword3" placeholder="Sub Exam Type">
         </div>
       </div>
 
-      <button type="button" class="btn btn-primary btn1">SUBMIT</button>
+      <button type="button" class="btn btn-primary btn1" (click)="myFunc()">SUBMIT</button>
 </form>
 </div>
